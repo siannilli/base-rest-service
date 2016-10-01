@@ -1,0 +1,14 @@
+// Place your settings in this file to overwrite default and user settings.
+{     
+     "files.exclude": {
+        //".vscode":true,
+        // ".gitignore":true,
+        "node_modules": true,
+        "typings": true,
+        //"build": true,
+        "**/.git": true,
+        "**/.DS_Store": true
+        // "**/*.js.map": true,
+        // "**/*.js": { "when": "$(basename).ts"}
+     }
+}
