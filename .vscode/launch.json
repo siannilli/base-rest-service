@@ -5,7 +5,7 @@
 			"name": "Launch",
 			"type": "node",
 			"request": "launch",
-			"program": "${workspaceRoot}/bin/start.ts",
+			"program": "${workspaceRoot}/src/bin/start.ts",
 			"stopOnEntry": false,
 			"args": [],
 			"cwd": "${workspaceRoot}",
@@ -22,7 +22,7 @@
 				"SECURE_API": "false",
 				"HASH_ALGORITHM": "HS256"
 			},
-			"externalConsole": false,
+			"console": "internalConsole",
 			"sourceMaps": true,
 			"outDir": "${workspaceRoot}/build"
 		},

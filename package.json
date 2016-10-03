@@ -10,7 +10,7 @@
     "service",
     "container"
   ],
-  "main": "build/Server.js",
+  "main": "build/bin/start.js",
   "typings":{
     "definition": "build/Server.d.ts"
   },
@@ -22,8 +22,6 @@
     "express": "~4.13.1",
     "cors": "*",  
     "jsonwebtoken": "*",
-    "mongodb": "~2.1.11",
-    "mongoose": "~4.4.10",
     "morgan": "~1.6.1",    
     "node-uuid": "1.4.7",
     "promise": "*",

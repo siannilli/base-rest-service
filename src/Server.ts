@@ -6,7 +6,6 @@ import * as morgan from 'morgan';
 import * as cors from 'cors';
 
 import{ ApplicationConfig } from './Config/ApplicationConfig';
-import * as mongoose from 'mongoose';
 import { IRoute } from './Route/IRoute';
 
 /**
