@@ -1,5 +1,6 @@
 // Place your settings in this file to overwrite default and user settings.
 {     
+    "git.autofetch": false,
      "files.exclude": {
         //".vscode":true,
         // ".gitignore":true,
