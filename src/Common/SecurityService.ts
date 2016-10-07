@@ -4,6 +4,11 @@ import { ApplicationConfig, jwtConfig } from '../Config/ApplicationConfig';
 import * as Errors from './Exceptions';
 import * as uuid from 'node-uuid';
 
+export interface IAuthenticatedRequest extends Express.Request{
+    token:TokenPayload;
+    is_authenticated : boolean;
+}
+
 /**
 * Token
 */
@@ -15,7 +20,7 @@ export class TokenManagement {
         console.log(`TokenManagement service setup with secret ${this.jwtConfig}`);
     }
     
-    public static SecurityCheck(request: Express.Request, response: Express.Response, next: Express.NextFunction) {        
+    public static SecurityCheck(request: IAuthenticatedRequest, response: Express.Response, next: Express.NextFunction) {        
         let token: string = request.header('Authorization') || request.query.auth_token || request.params.auth_token;               
 
         if (token === undefined)
