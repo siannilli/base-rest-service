@@ -4,7 +4,7 @@ const DEFAULTS = {
     "HASH_ALGORITHM": "HS256",
     "DATASTORE": "mongodb://dbo:dbo@localhost:27017/database",
     "SECURE_API": true,
-    "JWT_SECRET": "AuthT0k3nP@ssw0rd"
+    "JWT_SECRET": 'jwtS3cr3t'
 };
 
 export class jwtConfig{

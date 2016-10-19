@@ -18,7 +18,7 @@
 				"NODE_ENV": "development",
 				"DATASTORE": "mongodb://userService:userService@doc-db:27017/userService",
 				"PORT": "3000",
-				"JWT_SECRET": "AuthT0k3nP@ssw0rd",
+				"JWT_SECRET": "P@ssw0rd",
 				"SECURE_API": "false",
 				"HASH_ALGORITHM": "HS256"
 			},
