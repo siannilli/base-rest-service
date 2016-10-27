@@ -14,9 +14,10 @@
 	"showOutput": "silent",
 
 	// Tell the tsc compiler to use the tsconfig.json from the open folder.
-	"args": ["-p", "."],
+	"args": ["-w", "-p", "."],
 
 	// use the standard tsc problem matcher to find compile problems
 	// in the output.
-	"problemMatcher": "$tsc"
+	"problemMatcher": "$tsc", 
+	"isWatching": true
 }
