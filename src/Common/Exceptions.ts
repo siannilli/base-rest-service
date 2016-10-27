@@ -46,7 +46,7 @@ export class EntitytNotFoundError extends BaseApiError{
 }
 
 export class NotImplementedError extends BaseApiError{
-    constructor(public message?:string ){
+    constructor(message?:string ){
         super (message || 'Not implemented', 501, 'NotImplementedError');
     }
 

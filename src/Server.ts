@@ -78,7 +78,7 @@ export class Server {
         // development error handler
         // will print stacktrace
         if (this.app.get('env') === 'development') {
-            this.app.use(function(err, req, res, next) {
+            this.app.use(function(err:any, req:express.Request, res: express.Response, next: express.NextFunction) {
                 res.status(err.status || 500);
                 res.json({
                     message: err.message,
@@ -89,7 +89,7 @@ export class Server {
 
         // production error handler
         // no stacktraces leaked to user
-        this.app.use(function(err, req, res, next) {
+        this.app.use(function(err:any, req:express.Request, res:express.Response, next:express.NextFunction) {
             res.status(err.status || 500);
             res.json({
                 message: err.message,

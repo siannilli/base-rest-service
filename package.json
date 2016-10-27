@@ -12,23 +12,25 @@
     "container"
   ],
   "main": "build/bin/start.js",
-  "typings":{
+  "typings": {
     "definition": "build/Server.d.ts"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
     "cookie-parser": "~1.3.5",
+    "cors": "*",
     "crypto": "*",
     "debug": "~2.2.0",
     "express": "~4.13.1",
-    "cors": "*",  
     "jsonwebtoken": "*",
-    "morgan": "~1.6.1",    
-    "node-uuid": "1.4.7",
-    "promise": "*",
-    "serve-favicon": "~2.3.0"
-  },  
-  "author": {"email": "stefano.iannilli@gmail.com", "name" :"Stefano Iannilli"},
+    "morgan": "~1.6.1",
+    "node-uuid": "1.4.7",    
+    "serve-favicon": "~2.3.0"  
+  },
+  "author": {
+    "email": "stefano.iannilli@gmail.com",
+    "name": "Stefano Iannilli"
+  },
   "license": "MIT",
   "repository": {
     "url": "https://github.com/siannilli/base-rest-service"
