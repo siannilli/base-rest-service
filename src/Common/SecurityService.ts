@@ -27,7 +27,7 @@ export class TokenManagement {
             Errors.SendError(new Errors.NotAuthenticatedError(), response);
         else {
 
-            console.debug('found security token');
+            console.log('found security token');
             
             if (token.startsWith('Bearer')) // trim away the Bearer prefix
                 token = token.substr('Bearer'.length).trim();
